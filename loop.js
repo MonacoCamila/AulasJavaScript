@@ -21,23 +21,34 @@ for(let numeros = 0 ; numeros < 10; numeros++) {
 
 //Crie uma tabuada utilizando o for. Dica: Para essa tarefa você irá precisar utilizar dois loops (for).
 
-const tabuada = (...args)=>{
-    console.log(`Argumentos que foram passados: ${args}`)  
-    for (let valor of args) {
-        console.log(`${valor} * 2 = ${valor*2} `)
-    } 
-}
-tabuada(1,2,3,4,5)
-
-///////////////////////////////////////////////////////////
-
-//CICLOS WHILE / DOWHILE 
-
-let volta = 1
-while (volta <= 5); {
-    console.log('Volta numero' + volta);
-    volta++
+for(let i = 0; i < 11; i++){
+    console.log("3 x " + i + " = " + 3*i);
 };
+
+//OBS: Vale ressaltar que o while é mais indicado para situações onde não temos conhecimento do número de iterações do laço, 
+//já o for é mais adequado para situações que o número de iterações está definido previamente.
+
+//CICLOS WHILE / DOWHILE (tabuada do 5)
+
+let i = 0;
+while(i < 11){
+    console.log('5 x ' + i + ' = ' + 5*i);
+    i++;
+};
+
+//O do-while tem o mesmo conceito que o while com uma única diferença, 
+//a condição é verificada após os comandos do bloco serem executados, ou seja, mesmo que a condição seja falsa, é garantia que o bloco será executado ao menos uma vez.
+
+//Podemos testar da seguinte forma:
+
+let contador = 0;
+
+do{
+	console.log("O contador vale: " + contador);
+	contador++;
+}while(contador == 1)
+
+
 
 //Escreva um aplicativo em Javascript que mostre todos os números ímpares de 1 até 100
 
@@ -64,6 +75,7 @@ for (numeroInteiro = 1; numero <= 100; numero++) {
         imprime(numero);
     }
 };
+
 
 
 

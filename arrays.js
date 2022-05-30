@@ -95,20 +95,41 @@ console.log(string1);
 let string2 = filme2.toUpperCase();
 console.log(string2);
 
+function converterMaiusculas(array){
+    array[0] = array[0].toUpperCase()
+    array[1] = array[1].toUpperCase()
+    array[2] = array[2].toUpperCase()
+    array[3] = array[3].toUpperCase()
+    array[4] = array[4].toUpperCase()
+    return array
+    }
+
 let colecao2 = ["Toy Story", "Procurando Nemo", "Kung-fu Panda", "Wally", "Fortnite"]
-let soma = 0;
+
 
 //Em seguida, crie uma função que receba dois arrays como parâmetros, para poder adicionar os elementos contidos no 
 //segundo array, dentro do primeiro, a fim de retornar um único array com todos os filmes como seus elementos.
 
-let lastItem = colecao2.pop();
-console.log(colecao2);
+function passagemDeElementos(array1, array2) {
+    array1.push(array2.pop(). toUpperCase())
+    array1.push(array2.pop(). toUpperCase())
+    array1.push(array2.pop(). toUpperCase())
+    array1.push(array2.pop(). toUpperCase())
+    array1.push(array2.pop(). toUpperCase())
+    arrayRetorno1 }
 
-let game = Fortinite; 
-
-const asiaScores = [8, 10, 6, 9, 10, 6, 6, 8, 4];
-const euroScores = [8, 10, 6, 8, 10, 6, 7, 9, 5];
+const asia = [8, 10, 6, 9, 10, 6, 6, 8, 4];
+const europa = [8, 10, 6, 8, 10, 6, 7, 9, 5];
 //Crie uma função que compare as notas e nos diga se elas são iguais ou diferentes.
+
+function compararClassificacoes(asia, europa) {
+      let comparacoesAsiaEuropa = []
+      comparacoesAsiaEuropa[0] = asia[0] === europa[0]
+      comparacoesAsiaEuropa[1] = asia[1] === europa[1]
+      comparacoesAsiaEuropa[2] = asia[2] === europa[2]
+      comparacoesAsiaEuropa[3] = asia[3] === europa[3]
+};
+
 
 
 
